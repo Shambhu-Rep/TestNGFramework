@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Firefox Test(failed)">
+    <parameter name="Browser" value="firefox"/>
+    <classes>
+      <class name="org.test.parallel.execution.OpenParallelBrowser">
+        <methods>
+          <include name="test1" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- org.test.parallel.execution.OpenParallelBrowser -->
+    </classes>
+  </test> <!-- Firefox Test(failed) -->
+  <test thread-count="5" parallel="tests" name="IE Test(failed)">
+    <parameter name="Browser" value="ie"/>
+    <classes>
+      <class name="org.test.parallel.execution.OpenParallelBrowser">
+        <methods>
+          <include name="test1" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- org.test.parallel.execution.OpenParallelBrowser -->
+    </classes>
+  </test> <!-- IE Test(failed) -->
+  <test thread-count="5" parallel="tests" name="Chrome Test(failed)">
+    <parameter name="Browser" value="chrome"/>
+    <classes>
+      <class name="org.test.parallel.execution.OpenParallelBrowser">
+        <methods>
+          <include name="test1" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- org.test.parallel.execution.OpenParallelBrowser -->
+    </classes>
+  </test> <!-- Chrome Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
